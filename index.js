@@ -142,7 +142,7 @@ function update() {
     
   if (
     cursors.up.isDown &&
-    (player.body.touching.down || player.body.onFloor())
+    (player.body.onFloor())
   ) {
     player.setVelocityY(-250);
   }
